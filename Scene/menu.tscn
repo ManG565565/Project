@@ -1,0 +1,141 @@
+[gd_scene load_steps=12 format=3 uid="uid://38071jpoy2n5"]
+
+[ext_resource type="Script" uid="uid://dedmarpr2f63m" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://dq7snpry0juja" path="res://oak_woods_v1.0/background/background_layer_1.png" id="2_4hy44"]
+[ext_resource type="FontFile" uid="uid://bxamp2y66a4hv" path="res://font/pansyhand.ttf" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://dey6la2hpfl7a" path="res://oak_woods_v1.0/background/background_layer_2.png" id="3_ytr4m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ouk20"]
+bg_color = Color(0.140447, 0.140447, 0.140447, 1)
+border_color = Color(0.172549, 0.172549, 0.172549, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mae5d"]
+bg_color = Color(0.129558, 0.129559, 0.129558, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0.176419, 0.176419, 0.176419, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lti8b"]
+bg_color = Color(1, 1, 1, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+bg_color = Color(0.141176, 0.141176, 0.141176, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+bg_color = Color(0.141176, 0.141176, 0.141176, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
+bg_color = Color(0.141176, 0.141176, 0.141176, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_lti8b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BackgroundLayer1" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(803, 459)
+scale = Vector2(5.01875, 5.06667)
+texture = ExtResource("2_4hy44")
+
+[node name="BackgroundLayer2" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(799, 460.5)
+scale = Vector2(5.03125, 5.08333)
+texture = ExtResource("3_ytr4m")
+
+[node name="Start" type="Button" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1496.0
+offset_top = -270.0
+offset_right = -1258.0
+offset_bottom = -203.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(1.32, 1.28)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ouk20")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lti8b")
+text = "Start game"
+
+[node name="Exit" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -696.0
+offset_top = -146.0
+offset_right = -458.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.32, 1.28)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l48gv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ecwwl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lti8b")
+text = "Exit"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.012
+offset_left = 893.0
+offset_top = 23.0
+offset_right = 1211.8
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(0.821992, 0.732853, 0.206553, 1)
+theme_override_colors/font_shadow_color = Color(0.734399, 0.476334, 0.166627, 1)
+theme_override_colors/font_outline_color = Color(0.871913, 0.582734, 0, 1)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 300
+text = "Silphi"
+
+[connection signal="pressed" from="CanvasLayer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/Exit" to="." method="_on_exit_pressed"]

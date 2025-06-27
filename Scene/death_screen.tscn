@@ -1,0 +1,184 @@
+[gd_scene load_steps=23 format=3 uid="uid://cb1askxrafx7v"]
+
+[ext_resource type="Script" uid="uid://cg5g6t8pevakk" path="res://death_screen.gd" id="1_ex68u"]
+[ext_resource type="FontFile" uid="uid://bxamp2y66a4hv" path="res://font/pansyhand.ttf" id="1_if853"]
+[ext_resource type="Texture2D" uid="uid://gsxdi3jq55ks" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_1.png" id="2_lwom6"]
+[ext_resource type="Texture2D" uid="uid://drhup5e5b44ux" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_2.png" id="3_q3sow"]
+[ext_resource type="Texture2D" uid="uid://bifx3xshiu511" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_3.png" id="4_ml5a0"]
+[ext_resource type="Texture2D" uid="uid://c2dc6jb8pgqdj" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_4.png" id="5_uhhpk"]
+[ext_resource type="Texture2D" uid="uid://bhrhco5iigpj" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_5.png" id="6_417ne"]
+[ext_resource type="Texture2D" uid="uid://ksuchydkt6f5" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_6.png" id="7_tkjqq"]
+[ext_resource type="Texture2D" uid="uid://ndwenyv0m1ji" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_7.png" id="8_ol57q"]
+[ext_resource type="Texture2D" uid="uid://bkt3746ml8b4c" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_8.png" id="9_pboiy"]
+[ext_resource type="Texture2D" uid="uid://bhkb34cmri3qt" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_9.png" id="10_enuak"]
+[ext_resource type="Texture2D" uid="uid://buos6egnjg6ld" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_10.png" id="11_or0q7"]
+[ext_resource type="Texture2D" uid="uid://0b0ts1xnebxf" path="res://elf/Individual Sprite/Death-Effect/Warrior_Death_11.png" id="12_uhs35"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1tmu8"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_lwom6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q3sow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ml5a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uhhpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_417ne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tkjqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ol57q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pboiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_enuak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_or0q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uhs35")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwom6"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3sow"]
+bg_color = Color(0.0768359, 0.0768358, 0.0768358, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ml5a0"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhhpk"]
+bg_color = Color(0.775063, 0.775063, 0.775063, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ol57q"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_417ne"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkjqq"]
+bg_color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pboiy"]
+bg_color = Color(0.776471, 0.776471, 0.776471, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="DeathScreen" type="Node2D"]
+script = ExtResource("1_ex68u")
+
+[node name="DeathScreen" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="ColorRect" type="ColorRect" parent="DeathScreen"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.162066, 0.162066, 0.162066, 1)
+
+[node name="DeathAnimation" type="AnimatedSprite2D" parent="DeathScreen"]
+position = Vector2(833, 199)
+scale = Vector2(6.44651, 5.46154)
+sprite_frames = SubResource("SpriteFrames_1tmu8")
+animation = &"Death"
+autoplay = "Death"
+frame_progress = 0.458352
+
+[node name="Label" type="Label" parent="DeathScreen"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -291.0
+offset_top = -134.0
+offset_right = 271.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.999737, 0.0778506, 0.145333, 0.717647)
+theme_override_fonts/font = ExtResource("1_if853")
+theme_override_font_sizes/font_size = 100
+text = "You died a brave death"
+
+[node name="Restart" type="Button" parent="DeathScreen"]
+offset_left = 534.0
+offset_top = 480.0
+offset_right = 1043.0
+offset_bottom = 544.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_if853")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_lwom6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q3sow")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ml5a0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uhhpk")
+text = "Restart"
+
+[node name="Quit" type="Button" parent="DeathScreen"]
+offset_left = 533.0
+offset_top = 559.0
+offset_right = 1042.0
+offset_bottom = 624.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_if853")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ol57q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_417ne")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tkjqq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pboiy")
+text = "Quit"
+
+[connection signal="pressed" from="DeathScreen/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="DeathScreen/Quit" to="." method="_on_quit_pressed"]

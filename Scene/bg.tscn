@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1tqr3kgaumm8"]
+
+[ext_resource type="Texture2D" uid="uid://cggl8krx06q4v" path="res://parallax_demon_woods_pack/layers/parallax-demon-woods-bg.png" id="1_iq1of"]
+[ext_resource type="Texture2D" uid="uid://dn8emkcysclqt" path="res://parallax_demon_woods_pack/layers/parallax-demon-woods-far-trees.png" id="2_36ycx"]
+[ext_resource type="Texture2D" uid="uid://d2ows8mxgg51g" path="res://parallax_demon_woods_pack/layers/parallax-demon-woods-mid-trees.png" id="3_plmvg"]
+[ext_resource type="Texture2D" uid="uid://udsk88dl5hao" path="res://parallax_demon_woods_pack/layers/parallax-demon-woods-close-trees.png" id="4_7sudn"]
+
+[node name="bg_level" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+scale = Vector2(0.814456, 0.840483)
+
+[node name="Parallax-demon-woods-bg" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(993, 539)
+scale = Vector2(4.13333, 3.96691)
+texture = ExtResource("1_iq1of")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+scale = Vector2(0.814456, 0.840483)
+
+[node name="Parallax-demon-woods-far-trees" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(991, 541)
+scale = Vector2(3.36655, 3.94485)
+texture = ExtResource("2_36ycx")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+scale = Vector2(0.814456, 0.840483)
+
+[node name="Parallax-demon-woods-mid-trees" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(992, 538.5)
+scale = Vector2(3.37838, 3.96691)
+texture = ExtResource("3_plmvg")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+scale = Vector2(0.814456, 0.840483)
+
+[node name="Parallax-demon-woods-close-trees" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(990.5, 540)
+scale = Vector2(3.38345, 3.99265)
+texture = ExtResource("4_7sudn")
